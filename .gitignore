@@ -1,0 +1,48 @@
+# Node modules (jika pakai backend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# File sistem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build files (jika pakai)
+dist/
+build/
+*.apk
+*.aab
+*.ipa
+
+# Environment (jika pakai backend)
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Temp files
+tmp/
+temp/
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
