@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#667eea">
+    <title>Network Scanner</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📡 Network Scanner</h1>
+            <p>Perangkat terhubung dalam WiFi</p>
+        </header>
+
+        <main>
+            <div class="controls">
+                <button id="scanBtn" class="btn-primary">🔍 Scan Jaringan</button>
+                <button id="refreshBtn" class="btn-secondary">🔄 Refresh</button>
+            </div>
+
+            <div class="status" id="status">
+                <span>Status: Siap</span>
+            </div>
+
+            <div class="device-grid" id="deviceGrid">
+                <div class="loading" id="loading">Memindai perangkat...</div>
+                <div id="devicesContainer"></div>
+            </div>
+
+            <div class="info-panel">
+                <h3>Informasi Jaringan</h3>
+                <div id="networkInfo">
+                    <p>📶 IP: <span id="ipAddress">-</span></p>
+                    <p>📱 Perangkat: <span id="deviceCount">0</span></p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Network Scanner</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
