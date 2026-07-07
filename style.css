@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 24px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    font-size: 26px;
+    color: #2d3748;
+}
+
+header p {
+    color: #718096;
+    font-size: 14px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.btn-primary, .btn-secondary {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:active {
+    transform: scale(0.96);
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #4a5568;
+}
+
+.status {
+    background: #f7fafc;
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #4a5568;
+    border-left: 4px solid #667eea;
+}
+
+.device-grid {
+    background: #f7fafc;
+    border-radius: 12px;
+    padding: 16px;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.loading {
+    text-align: center;
+    color: #a0aec0;
+    padding: 30px 0;
+}
+
+.device-item {
+    background: white;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.device-item:last-child {
+    margin-bottom: 0;
+}
+
+.device-name {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.device-ip {
+    font-size: 12px;
+    color: #718096;
+}
+
+.device-mac {
+    font-size: 11px;
+    color: #a0aec0;
+}
+
+.device-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #48bb78;
+}
+
+.info-panel {
+    margin-top: 16px;
+    padding: 16px;
+    background: #f7fafc;
+    border-radius: 12px;
+}
+
+.info-panel h3 {
+    color: #2d3748;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.info-panel p {
+    color: #4a5568;
+    font-size: 13px;
+    margin: 4px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-panel span {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+footer {
+    text-align: center;
+    margin-top: 16px;
+    color: #a0aec0;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 16px;
+    }
+    .controls {
+        flex-direction: column;
+    }
+}
