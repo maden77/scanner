@@ -81,12 +81,12 @@ class NetworkScanner {
         const prefix = ip.split('.').slice(0, 3).join('.');
         
         const mockDevices = [
-            { name: '📡 Router', ip: `${prefix}.1`, mac: this.randomMAC(), status: 'active' },
-            { name: '💻 Laptop', ip: `${prefix}.${Math.floor(Math.random() * 254 + 2)}`, mac: this.randomMAC(), status: 'active' },
-            { name: '📱 iPhone', ip: `${prefix}.${Math.floor(Math.random() * 254 + 2)}`, mac: this.randomMAC(), status: 'active' },
-            { name: '📱 Samsung', ip: `${prefix}.${Math.floor(Math.random() * 254 + 2)}`, mac: this.randomMAC(), status: 'active' },
-            { name: '📺 Smart TV', ip: `${prefix}.${Math.floor(Math.random() * 254 + 2)}`, mac: this.randomMAC(), status: 'active' },
-            { name: '🖨️ Printer', ip: `${prefix}.${Math.floor(Math.random() * 254 + 2)}`, mac: this.randomMAC(), status: 'active' },
+            { name: '1', ip: `${prefix}.1`, mac: this.randomMAC(), status: 'active' },
+            { name: '2', ip: `${prefix}.${Math.floor(Math.random() * 254 + 2)}`, mac: this.randomMAC(), status: 'active' },
+            { name: '3', ip: `${prefix}.${Math.floor(Math.random() * 254 + 2)}`, mac: this.randomMAC(), status: 'active' },
+            { name: '4', ip: `${prefix}.${Math.floor(Math.random() * 254 + 2)}`, mac: this.randomMAC(), status: 'active' },
+            { name: '5', ip: `${prefix}.${Math.floor(Math.random() * 254 + 2)}`, mac: this.randomMAC(), status: 'active' },
+            { name: '6', ip: `${prefix}.${Math.floor(Math.random() * 254 + 2)}`, mac: this.randomMAC(), status: 'active' },
         ];
 
         const count = Math.floor(Math.random() * 4) + 3;
